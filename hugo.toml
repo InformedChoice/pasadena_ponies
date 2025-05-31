@@ -1,7 +1,6 @@
-baseURL = 'https://pasadenaponies.com/'
+baseURL = 'https://pasadena-ponies.pages.dev/'
 languageCode = 'en-us'
 title = 'Pasadena Ponies Youth Football & Cheer'
-theme = ''
 
 [params]
   description = 'Pasadena Ponies Youth Football & Cheer - Building Champions, Creating Leaders Since 1987'
