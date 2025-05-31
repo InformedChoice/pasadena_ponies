@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+    <div class="container">
+        <header class="page-header" style="text-align: center; padding: 3rem 0;">
+            <h1>{{ .Title }}</h1>
+            {{ if .Description }}
+            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 700px; margin: 1rem auto;">{{ .Description }}</p>
+            {{ end }}
+        </header>
+        
+        <div class="content" style="max-width: 800px; margin: 0 auto;">
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container">
+    <header class="page-header" style="text-align: center; padding: 3rem 0;">
+        <h1>{{ .Title }}</h1>
+        {{ if .Description }}
+        <p style="font-size: 1.2rem; color: var(--text-light); max-width: 700px; margin: 1rem auto;">{{ .Description }}</p>
+        {{ end }}
+    </header>
+    
+    <div class="grid grid-2">
+        {{ range .Pages }}
+        <article class="card">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p style="color: var(--text-light); font-size: 0.9rem;">{{ .Date.Format "January 2, 2006" }}</p>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" style="font-weight: 600;">Read More →</a>
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

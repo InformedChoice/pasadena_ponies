@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Pony silhouette -->
+  <path d="M20 35 C20 35, 15 30, 15 25 C15 20, 18 15, 23 15 C25 15, 27 13, 30 13 C33 13, 35 15, 35 18 C35 18, 38 16, 40 18 C42 20, 42 23, 40 25 L38 28 C38 28, 40 30, 40 35 C40 40, 38 42, 35 42 C32 42, 30 40, 30 40 C30 40, 28 42, 25 42 C22 42, 20 40, 20 35 Z" fill="#2774AE"/>
+  
+  <!-- Text "PASADENA" -->
+  <text x="55" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2774AE">PASADENA</text>
+  
+  <!-- Text "PONIES" -->
+  <text x="55" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFD100">PONIES</text>
+  
+  <!-- Star accents -->
+  <path d="M170 20 L172 25 L177 25 L173 28 L175 33 L170 30 L165 33 L167 28 L163 25 L168 25 Z" fill="#FFD100"/>
+</svg>

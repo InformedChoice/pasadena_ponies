@@ -1,0 +1,51 @@
+baseURL = 'https://pasadenaponies.com/'
+languageCode = 'en-us'
+title = 'Pasadena Ponies Youth Football & Cheer'
+theme = ''
+
+[params]
+  description = 'Pasadena Ponies Youth Football & Cheer - Building Champions, Creating Leaders Since 1987'
+  author = 'Pasadena Ponies'
+  logo = '/images/ponies-logo.svg'
+  phone = '(626) 555-0123'
+  email = 'info@pasadenaponies.com'
+  address = 'Northwest Pasadena, CA'
+  facebook = 'https://facebook.com/pasadenaponies'
+  instagram = 'https://instagram.com/pasadenaponies'
+  twitter = 'https://twitter.com/pasadenaponies'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  
+  [[menu.main]]
+    name = 'About Us'
+    url = '/about/'
+    weight = 2
+  
+  [[menu.main]]
+    name = 'Safety First'
+    url = '/safety/'
+    weight = 3
+  
+  [[menu.main]]
+    name = 'Schedule'
+    url = '/schedule/'
+    weight = 4
+  
+  [[menu.main]]
+    name = 'Top Performers'
+    url = '/top-performers/'
+    weight = 5
+  
+  [[menu.main]]
+    name = 'Contact'
+    url = '/contact/'
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

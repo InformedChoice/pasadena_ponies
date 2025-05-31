@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <pattern id="football-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Football shape -->
+      <ellipse cx="50" cy="50" rx="30" ry="20" fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+      <!-- Football laces -->
+      <line x1="50" y1="35" x2="50" y2="65" stroke="white" stroke-width="1" opacity="0.3"/>
+      <line x1="45" y1="45" x2="55" y2="45" stroke="white" stroke-width="1" opacity="0.3"/>
+      <line x1="45" y1="50" x2="55" y2="50" stroke="white" stroke-width="1" opacity="0.3"/>
+      <line x1="45" y1="55" x2="55" y2="55" stroke="white" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#football-pattern)"/>
+</svg>

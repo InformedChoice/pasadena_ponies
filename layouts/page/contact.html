@@ -1,0 +1,86 @@
+{{ define "main" }}
+<article>
+    <div class="container">
+        <header class="page-header" style="text-align: center; padding: 3rem 0;">
+            <h1>{{ .Title }}</h1>
+            {{ if .Description }}
+            <p style="font-size: 1.2rem; color: var(--text-light); max-width: 700px; margin: 1rem auto;">{{ .Description }}</p>
+            {{ end }}
+        </header>
+        
+        <div class="content" style="max-width: 800px; margin: 0 auto;">
+            <h2>Join the Ponies Family!</h2>
+            <p>Ready to be part of a championship tradition? Have questions about our program? We're here to help!</p>
+            
+            <div class="contact-form">
+                <form onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="parent-name">Parent/Guardian Name *</label>
+                        <input type="text" id="parent-name" name="parent-name" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="child-name">Child's Name *</label>
+                        <input type="text" id="child-name" name="child-name" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="child-age">Child's Age *</label>
+                        <select id="child-age" name="child-age" required>
+                            <option value="">Select Age</option>
+                            <option value="6">6 years old</option>
+                            <option value="7">7 years old</option>
+                            <option value="8">8 years old</option>
+                            <option value="9">9 years old</option>
+                            <option value="10">10 years old</option>
+                            <option value="11">11 years old</option>
+                            <option value="12">12 years old</option>
+                            <option value="13">13 years old</option>
+                            <option value="14">14 years old</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="program">Program Interest *</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="6u">6U Division (Age 6)</option>
+                            <option value="8u">8U Division (Ages 7-8)</option>
+                            <option value="10u">10U Division (Ages 9-10)</option>
+                            <option value="12u">12U Division (Ages 11-12)</option>
+                            <option value="14u">14U Division (Ages 13-14)</option>
+                            <option value="cheer">Cheer Squad (All Ages)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Questions or Comments</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your child's experience level, any concerns, or questions you have..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="scholarship" value="yes" />
+                            I'm interested in scholarship opportunities
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ end }}
