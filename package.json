@@ -1,0 +1,12 @@
+{
+  "name": "pasadena-ponies",
+  "version": "1.0.0",
+  "description": "Pasadena Ponies Youth Football Website",
+  "scripts": {
+    "build": "hugo --minify",
+    "serve": "hugo server"
+  },
+  "devDependencies": {
+    "hugo": "^0.128.0"
+  }
+}
